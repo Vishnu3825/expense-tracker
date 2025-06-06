@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 public class ExpenseController {
 
     @Autowired
-    private ExpenseRepository repo;
+    public ExpenseRepository repo;
 
     @GetMapping
     public List<Expense> getAllExpenses() {
